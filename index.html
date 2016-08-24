@@ -2,22 +2,69 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id="hero">
+        <div class="title"><div class="line animated fadeInLeft">UX Designer &</div><div class="line animated fadeInRight">Interactive Developer</div></div>
+        </div>
 </div>
+
+<div id="selected_work">
+         <div class="work_line_first animated fadeInUp">
+         <div class="selected_work_title">Selected work</div>
+         </div>
+         <div id="works">
+         <div class="work_line animated fadeInUp">
+         <a href="works/days/index.html">
+         <div class="project_title">Days</div>
+         <div class="project_info">UX & UI designer</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/achievo/index.html">
+         <div class="project_title">Achievo</div>
+         <div class="project_info">Co-Founder and designer</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/favorr/index.html">
+         <div class="project_title">Favorr</div>
+         <div class="project_info">UX & UI designer</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/eduplay/index.html">
+         <div class="project_title">Eduplay</div>
+         <div class="project_info">Volunteer experience</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/michaelkors/index.html">
+         <div class="project_title">Michael Kors</div>
+         <div class="project_info">Personal website project</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/artattack/index.html">
+         <div class="project_title">ArtAttack</div>
+         <div class="project_info">Lead designer</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/coffeehouse/index.html">
+         <div class="project_title">Coffee House</div>
+         <div class="project_info">Personal iOS project</div>
+         </a>
+         </div>
+         <div class="work_line animated fadeInUp">
+         <a href="works/oneless/index.html">
+         <div class="project_title">OneLess</div>
+         <div class="project_info">Visual designer</div>
+         </a>
+         </div>
+         <div class="work_line no_border animated fadeInUp">
+         <a href="works/experiments/index.html">
+         <div class="project_title">Experiments</div>
+         <div class="project_info">Selected works</div>
+         </a>
+         </div>
+         </div>
+         </div>

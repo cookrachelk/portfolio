@@ -9,8 +9,7 @@
 # Site settings
 title: Rachel K Cook
 email: cookrachelk@gmail.com
-description: >
-  My first
+description: My first
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: batsfomj

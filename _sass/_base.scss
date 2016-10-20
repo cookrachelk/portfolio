@@ -16,3 +16,10 @@ $header:  #1D1425;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+@mixin transition($transition){
+	-webkit-transition:$transition;
+	-moz-transition:$transition;
+	-ms-transition:$transition;
+	-o-transition:$transition;
+	transition:$transition;
+}

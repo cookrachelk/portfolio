@@ -1,3 +1,16 @@
 <footer>
-	<p>By <a href="http://taniarascia.com">Rachel</p>
+	<p>Get in touch. <a href="mailto:cookrachelk@gmail.com">Send an Email</a></p>
 </footer>
+<script>
+sr.reveal('.revealitem', { duration: 1200 });
+sr.reveal('.revealdelay', { duration: 1400, origin: 'left' }, 200);
+
+$(window).scroll(function() {
+if ($(document).scrollTop() > 50) {
+	$('header').addClass('shrink');
+} else {
+	$('header').removeClass('shrink');
+}
+});
+
+</script

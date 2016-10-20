@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html lang="en" class="js">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+        <section id="hero" class="one">
+          <div class="navbar one">
+
+          <div class="container fixed-navbar">
+                  <div class="row">
+                    <div class="">
+                      <div class="navbar-lockup">
+                        <div class="logo"><img src="img/logo.png"/></div>
+                        <div class="nav">
+                        <a href="">About</a>
+                          <a href="">Features</a>
+                          <a href="">Reviews</a>
+                        <a href="">Blog</a>
+                        <a href="">Support</a>
+                          <a href="" class="btn btn-primary open">Get App</a>
+                        </div><!--end nav-->
+                        <div class="mobile-nav-toggle"><span></span></div>
+                      </div><!--end lockup-->
+                      <div class="mobile-nav-overlay">
+
+			<nav>
+
+				<ul>
+
+					<li><a>About</a></li>
+					<li><a>Features</a></li>
+					<li><a>Reviews</a></li>
+					<li><a>Blog</a></li>
+					<li><a>Support</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div><!--en mobile nav-->
+                    </div>
+                  </div>
+                </div>
+
+              </div><!--end nav bar-->
+          <div id="background" class="mouse-bg"></div>
+<div id="foreground" class="mouse-bg"></div>
+<div id="gradient" class="mouse-bg"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 claim">
+                <img src="img/applogo.png" style="width:10%;"/>
+                <h1>Helps you eat <span class="bold">better</span>.</h1>
+                <p>FitApp is a free food diary & calorie counting app with a large food database. Also calculates calories burned by exercise. Get healthy and lose weight with FitApp, the world's most popular health app!</p>
+                <div class="appdownload">
+                  <img src="img/appstore.png"/>
+                  <img src="img/googleplay.png"/>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="iPhone-top"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="count">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="iPhone-left"></div>
+              </div>
+              <div class="col-md-6 animate-box">
+
+                <h2>Best calorie <span class="green">counter app!</span></h2>
+                <p>Tell us your target weight - we create a balanced nutrition plan for you. Our average active user loses 1.4 lb/week - choose a comfortable rate for yourself. Follow our daily recommendations based upon today's counts, trust AutoPilot to optimize your plan for steady weight loss, and see the big picture via extensive reports.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="plan">
+          <div id="background2" class="mouse-bg"></div>
+<div id="foreground2" class="mouse-bg"></div>
+          <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 " >
+              <div class="animate-box">
+                <h2>A simple way to <span class="green">plan your diet!</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+              </div>
+              <div class="iPhone-center"></div>
+          </div>
+        </div>
+      </div>
+        </section>
+        <section id="meal">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 animate-box">
+                <h2>Manage your <span class="green">meal time!</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+              </div>
+              <div class="col-md-5">
+                  <div class="product-right"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="download">
+          <div id="background3" class="mouse-bg"></div>
+          <div id="gradient" class="mouse-bg"></div>
+          <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="animate-box">
+                <h2>Download, customize & <span class="bold">enjoy!</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <br/><a href="" class="btn btn-primary open">Get App</a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        </section>
+	<script src="js/jquery.min.js"></script>
+        <!-- Waypoints -->
+      	<script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/mouse.parallax.js"></script>
+  <script>
+  $(document).ready(function() {
+  				$('#background').mouseParallax({ moveFactor: 5, targetContainer:'#hero' });
+  				$('#foreground').mouseParallax({ moveFactor: 7, targetContainer:'#hero' });
+          $('#background2').mouseParallax({ moveFactor: 9, targetContainer:'#plan' });
+          $('#foreground2').mouseParallax({ moveFactor: 10, targetContainer:'#plan' });
+          $('#background3').mouseParallax({ moveFactor: 10, targetContainer:'#download' });
+
+          (function($) {
+            $(".mobile-nav-toggle").click(function() {
+      $(this).hasClass("open") ? ($(this).removeClass("open"),
+      $(".mobile-nav-overlay").removeClass("open")) : ($(this).addClass("open"),
+      $(".mobile-nav-overlay").addClass("open"))
+  });
+          })(jQuery);
+
+  			});
+  </script>
+</body>
+</html>

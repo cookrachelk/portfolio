@@ -10,7 +10,7 @@
  title: Rachel K Cook
  email: cookrachelk@gmail.com
  description: My first
- baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+ baseurl: "" # the subpath of your site, e.g. /blog
  url: "http://www.rachelkcook.com" # the base hostname & protocol for your site
  twitter_username: batsfomj
  github_username: cookrachelk

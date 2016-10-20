@@ -13,7 +13,7 @@
  baseurl: "/portfolio" # the subpath of your site, e.g. /blog
  url: "www.rachelkcook.com" # the base hostname & protocol for your site
  twitter_username: batsfomj
- github_username:  cookrachelk
+ github_username: cookrachelk
 
  # Build settings
  sass:

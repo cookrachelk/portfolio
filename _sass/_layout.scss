@@ -332,8 +332,11 @@ a {
 	}
 
 	.title {
-		font-size: 180px;
-		line-height: 160px;
+		font-size: 100px;
+		line-height: 125px;
+	}
+	.go-next-label{
+		font-size:1.5em;
 	}
 }
 
@@ -1047,6 +1050,10 @@ video {
 	}
 }
 @media only screen and (min-width :1824px) {
+#logo_center{
+	width:95px;
+}
+
 	#header_work {
 		height: 70px;
 		padding-top: 2%;

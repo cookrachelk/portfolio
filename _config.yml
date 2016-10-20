@@ -11,7 +11,7 @@
  email: cookrachelk@gmail.com
  description: My first
  baseurl: "/portfolio" # the subpath of your site, e.g. /blog
- url: "http://cookrachelk.github.io" # the base hostname & protocol for your site
+ url: "www.rachelkcook.com" # the base hostname & protocol for your site
  twitter_username: batsfomj
  github_username:  cookrachelk
 

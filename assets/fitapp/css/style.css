@@ -52,7 +52,8 @@ p {
 
 #hero h1 {
   font-size: 50px;
-  color: #1e884b; }
+  color: #0a6932;
+  margin-top: 40px; }
 #hero p {
   font-size: 18px; }
 
@@ -67,7 +68,7 @@ p {
   display: inline; }
 
 .appdownload {
-  margin-top: 25px; }
+  margin-top: 80px; }
 
 #download {
   position: relative;
@@ -75,9 +76,12 @@ p {
   color: #fff;
   text-align: center; }
   #download h2 {
-    color: #1e884b; }
+    color: #0a6932; }
 
-.iPhone-center, .iPhone-left, .product-right {
+.applogo {
+  width: 10%; }
+
+.iPhone-center {
   background-image: url("../img/iphone-center.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,6 +93,10 @@ p {
   height: 405px; }
 
 .iPhone-left {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   background-image: url("../img/iphone-left.png");
   width: 310px;
   height: 360px;
@@ -96,12 +104,39 @@ p {
   margin-top: 0px; }
 
 .product-right {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   background-image: url("../img/product-right.png");
   width: 266px;
   height: 210px;
   margin: auto;
   margin-top: 0; }
 
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  #hero {
+    height: auto; }
+
+  .iPhone-center {
+    width: 350px;
+    height: 305px; }
+
+  #background {
+    background-size: 806px;
+    background-position: -280px 130px; }
+
+  #foreground {
+    display: none; }
+
+  .claim {
+    margin: 20px; }
+
+  .applogo {
+    width: 15%; }
+
+  .navbar-lockup .logo {
+    margin-left: 15px; } }
 .nav {
   float: right; }
 
@@ -117,7 +152,12 @@ p {
 
 .claim {
   padding: 50px 0 60px;
-  top: 65px; }
+  top: 65px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .js .animate-box {
   opacity: 0; }
@@ -505,5 +545,23 @@ button {
   -ms-transform: translateY(-13px) rotate(-135deg);
   -o-transform: translateY(-13px) rotate(-135deg);
   transform: translateY(-13px) rotate(-135deg); }
+
+.navbar.mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background: rgba(0, 171, 53, 0.71);
+  margin-bottom: 100px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .navbar.mobile .navbar-lockup {
+    line-height: 75px; }
+
+.navbar.mobile .navbar-lockup .mobile-nav-toggle {
+  margin-top: 18px; }
 
 /*# sourceMappingURL=style.css.map */

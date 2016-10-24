@@ -3,6 +3,7 @@
 <html lang="en" class="js">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title></title>
   <meta name="description" content="">
@@ -65,7 +66,7 @@
 <div id="gradient" class="mouse-bg"></div>
           <div class="container">
             <div class="row">
-              <div class="col-md-7 claim">
+              <div class="col-sm-7 col-md-7 claim">
                 <img src="img/applogo.png" style="width:10%;"/>
                 <h1>Helps you eat <span class="bold">better</span>.</h1>
                 <p>FitApp is a free food diary & calorie counting app with a large food database. Also calculates calories burned by exercise. Get healthy and lose weight with FitApp, the world's most popular health app!</p>
@@ -74,7 +75,7 @@
                   <img src="img/googleplay.png"/>
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-sm-5 col-md-5">
                 <div class="iPhone-top"></div>
               </div>
             </div>
@@ -83,10 +84,10 @@
         <section id="count">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-6 col-md-6">
                 <div class="iPhone-left"></div>
               </div>
-              <div class="col-md-6 animate-box">
+              <div class="col-sm-6 col-md-6 animate-box">
 
                 <h2>Best calorie <span class="green">counter app!</span></h2>
                 <p>Tell us your target weight - we create a balanced nutrition plan for you. Our average active user loses 1.4 lb/week - choose a comfortable rate for yourself. Follow our daily recommendations based upon today's counts, trust AutoPilot to optimize your plan for steady weight loss, and see the big picture via extensive reports.</p>
@@ -113,12 +114,12 @@
         <section id="meal">
           <div class="container">
             <div class="row">
-              <div class="col-md-7 animate-box">
+              <div class="col-sm-7 col-md-7 animate-box">
                 <h2>Manage your <span class="green">meal time!</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
               </div>
-              <div class="col-md-5">
+              <div class="col-sm-5 col-md-5">
                   <div class="product-right"></div>
               </div>
             </div>
@@ -146,6 +147,8 @@
   <script src="js/site.js"></script>
   <script src="js/mouse.parallax.js"></script>
   <script>
+
+
   $(document).ready(function() {
   				$('#background').mouseParallax({ moveFactor: 5, targetContainer:'#hero' });
   				$('#foreground').mouseParallax({ moveFactor: 7, targetContainer:'#hero' });
@@ -160,7 +163,13 @@
       $(".mobile-nav-overlay").addClass("open"))
   });
           })(jQuery);
-
+          $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $('.navbar').addClass('mobile');
+      } else {
+        $('.navbar').removeClass('mobile');
+      }
+      });
   			});
   </script>
 </body>

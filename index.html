@@ -9,9 +9,9 @@ layout: default
     </div>
 </div><!--end her0-->
 
-<div class="arrow bounce">
+<div class="arrow  delay2 animated fadeInUp">
 
-  <a href="#selected_work" data-scroll="" class="scroll animated fadeInUp hero-go-next no-smoothstate"><div class="go-next-label">Selected Works</div><div class="arrow-1"></div></a>
+  <a href="#selected_work" data-scroll="" class="scroll delay6 animated fadeInUp hero-go-next no-smoothstate"><div class="go-next-label">Selected Works</div><div class="arrow-1"></div></a>
 </div>
 
 <div id="selected_work">
@@ -148,7 +148,7 @@ I was also responsible for the front end development of a correspoding dashboard
             <img src="images/case-selenium.png" />
         </div>
         <div class="col-sm-4 col-md-4 case-copy">
-            <p>This freelance project features a landing page for an organic fish food company called Selenium. I created a digital presence for the company </p>
+            <p>This freelance project features a landing page for an organic fish food company called Selenium. It is a vibrant web page that aims to captivate hobbyists and creates a digital presence for the company. </p>
             <p> <span>Services:</span> Web Design, Front-End</p>
             <p><span>Built With:</span> HTML,CSS,JQUERY</p>
             <p class="view-link"><a href="http://www.seleniumfood.com" target="_blank">View Project&nbsp;&#10230;</a></p>
@@ -176,7 +176,7 @@ I was also responsible for the front end development of a correspoding dashboard
             <img src="images/case-fitapp.png" />
         </div>
         <div class="col-sm-4 col-md-4 case-copy">
-            <p>This personal project features a landing page for a fictitious web and mobile application called, FitApp. The vibrant design was provided by <a href="https://dribbble.com/shots/2730921-FitApp-Free-PSD-Template" target="_blank">Jakub Kowalczyk</a>. The intention of this work is to give you a glimpse at my ability to take a PSD and bring it to life through the use of modern front-end technologies.</p>
+            <p>This personal project features a landing page for a fictitious web and mobile application called, FitApp. This colorful design was provided by <a href="https://dribbble.com/shots/2730921-FitApp-Free-PSD-Template" target="_blank">Jakub Kowalczyk</a>. The intention of this work is to give you a glimpse at my ability to take a PSD and bring it to life through the use of modern front-end technologies.</p>
             <p> <span>Services:</span> Front-End</p>
             <p><span>Built With:</span> HTML,SASS,JQUERY</p>
             <p class="view-link"><a href="assets/fitapp/demo.html" target="_blank">View Project&nbsp;&#10230;</a></p>
@@ -260,5 +260,10 @@ $("#project4").animatedModal({modalTarget:'modal-04'});
 $("#project5").animatedModal({modalTarget:'modal-05'});
 // JavaScriptbrowserCycle();
 	// JavaScript
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.arrow').addClass('bounce');
+  }, 2300);
 
+});
 		</script>

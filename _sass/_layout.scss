@@ -378,7 +378,7 @@ a {
 		line-height: 125px;
 	}
 	.go-next-label{
-		font-size:1.5em;
+		font-size:1.5em !important;
 	}
 }
 
@@ -813,13 +813,11 @@ body#cv_page {
 	}
 
 	.cv_big {
-		font-size: 100px;
-		line-height: 140px;
+		font-size: 48px;
+
 	}
 
-	.cv_item_big {
-		margin: 300px 0;
-	}
+	
 
 	.cv_item {
 		margin: 200px 0;
@@ -1461,6 +1459,7 @@ label {
 		a {
 			padding: 12px 50px;
 			border: 1px solid #f2f2f2;
+			color: $main;
 		}
 
 		a:hover {
